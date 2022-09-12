@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <title>GSAP - tweenmax</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
 </head>
 <body>
     <h1>Engineering for tomorrow</h1>
-    <button id="cta">watch here</button>
+    <button id="cta">play ▶</button>
+    <button id="pause">pause ⏸</button>
 
     <div class="panel">
         <img id="illustration" src="images/Tech Life - Blockchain.png">
@@ -17,17 +20,7 @@
         <div class="box"></div>
     </div>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="animate.js"></script>
 
-    <script>
-
-        document.getElementById('cta').addEventListener('click', function() {
-            TweenMax.to('.panel', 1.5,  { scaleY: 1, height: '100vh', ease: "expo.out" })
-            TweenMax.to('#illustration', 1,  { y: 0, opacity: 1, delay: 1, ease: "back.out(1.7)" })
-            TweenMax.to('.box', 1,  { scale: 1, opacity: 1, delay: 1.3, ease: "back.out(1.7)" })
-            TweenMax.to('p', 1,  { opacity: 1, delay: 1.3, ease: "back.out(1.7)" })
-        })
-
-    </script>
 </body>
 </html>

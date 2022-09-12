@@ -1,6 +1,6 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 9em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10em;
 }
 
 h1 {
@@ -13,6 +13,7 @@ h1 {
 button {
     background: none;
     padding: .5em 1em;
+    height: 50px;
     border: 1px solid black;
     font-family: inherit;
     font-weight: bold;
@@ -36,7 +37,7 @@ button {
         float: left;
         margin-right: 40px;
         opacity: 0;
-        transform: translateY(-200px);
+        transform: translateY(-240px);
     }
 
     p {
@@ -46,12 +47,12 @@ button {
     }
 
     .box {
-        border: 5px solid lightgray;
+        border: 5px solid lightblue;
         width: 85%;
         height: 48%;
         position: absolute;
-        left: -7%;
-        top: 15%;
+        left: -8%;
+        top: 24%;
         z-index: -1;
         opacity: 0;
         transform: scale(0);
